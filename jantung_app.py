@@ -46,7 +46,7 @@ if st.sidebar.button("Lakukan Prediksi"):
     
     confidence_score = pred_probs[pred_class]
     
-    st.subheader("Hasil Prediksi")
+    st.subheader("📊 Hasil Prediksi")
     
     if pred_class == 0:
         st.success(f"**Diagnosis:** Normal (Tidak Terdeteksi Penyakit Jantung)")
@@ -56,7 +56,7 @@ if st.sidebar.button("Lakukan Prediksi"):
     st.write(f"**Tingkat Kepercayaan:** {confidence_score:.2%}")
     
     # MENAMPILKAN DETAIL PROBABILITAS
-    st.subheader("Detail Probabilitas")
+    st.subheader("🔍 Detail Probabilitas")
     st.write(f"Probabilitas Normal: {pred_probs[0]:.2%}")
     st.write(f"Probabilitas Sakit Jantung: {pred_probs[1]:.2%}")
     
