@@ -26,7 +26,7 @@ except FileNotFoundError:
 
 # MEMUAT DATASET YANG DIGUNAKAN UNTUK FITUR REKOMENDASI
 try:
-    dataset = pd.read_csv('data/Heart_disease_statlog.csv')
+    dataset = pd.read_csv('Data/Heart_disease_statlog.csv')
     feature_means = dataset.mean(numeric_only=True)
 except FileNotFoundError:
     st.warning("⚠️ Dataset tidak ditemukan. Rekomendasi tidak bisa ditampilkan.")
